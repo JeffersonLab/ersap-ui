@@ -1,0 +1,97 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "ERSAP"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {comp menuBar1::l::807:x, seq l {comp scrollPane1:::p:86:p, space :::p, comp designCanvas::::715:x}, seq l {space :p:12:p, comp label1:::p::p, space s:::p, comp configurationName::::692:x}, comp scrollPane3::t::807:x}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :p::p, comp menuBar1:::p:35:p, space :p::p, par b {comp label1::b:p::p, comp configurationName::b:p::p}, space :p::p, par l {comp scrollPane1::::425:x, comp designCanvas::::425:x}, space :p::p, comp scrollPane3:::p:115:p, space :p::p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+						name: "menuBar1"
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu1"
+							"text": "File"
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu2"
+							"text": "Edit"
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu3"
+							"text": "View"
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu4"
+							"text": "Control"
+						} )
+						add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+							name: "toolBar1"
+							add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+								name: "hSpacer1"
+							} )
+							add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+								name: "separator1"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "saveConfigurationButton"
+								"text": "Save"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "deployProcessesButton"
+								"text": "Deploy"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "stopProcessesButton"
+								"text": "Stop"
+							} )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "componentList"
+							"model": new javax.swing.DefaultListModel {
+								addElement( "DS" )
+								addElement( "DL" )
+								addElement( "LB" )
+								addElement( "DAG" )
+								addElement( "DPU" )
+							}
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "designCanvas"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane3"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "terminal"
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Configuration"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "configurationName"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 845, 690 )
+		} )
+	}
+}
